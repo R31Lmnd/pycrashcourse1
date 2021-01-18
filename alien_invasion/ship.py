@@ -26,7 +26,6 @@ class Ship:
 # Update rect object from self.x
         self.rect.x = self.x
 
-
     def blitme(self):
         self.screen.blit(self.image, self.rect)
 # Test try it yourself code below (12-2)
@@ -41,3 +40,7 @@ class Ship:
         # self.rect.center = self.screen_rect.center
 # def blitme(self):
 # self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
